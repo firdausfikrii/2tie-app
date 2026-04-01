@@ -1,0 +1,114 @@
+/* Import font Jepang klasik */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&display=swap');
+
+/* Body - gelap elegan */
+body {
+    font-family: 'Noto Serif JP', serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+    color: #eaeaea;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container utama */
+.card {
+    max-width: 620px;
+    margin: 40px auto;
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* Glow merah halus */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(139,0,0,0.3), transparent);
+    opacity: 0.3;
+}
+
+/* Ornamen pedang */
+.card::after {
+    content: "⚔️";
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.05;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(139, 0, 0, 0.4);
+}
+
+/* Header */
+h1 {
+    color: #d4af37; /* emas */
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Garis bawah emas */
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 12px auto 0;
+}
+
+/* Paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #d6d6d6;
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #8b0000, transparent);
+    margin: 20px 0;
+}
+
+/* Greeting */
+small {
+    display: block;
+    text-align: center;
+    color: #bfa76f;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+/* Animasi masuk */
+.card {
+    animation: samuraiFade 0.8s ease;
+}
+
+@keyframes samuraiFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
