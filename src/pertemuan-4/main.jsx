@@ -8,7 +8,7 @@ createRoot(document.getElementById("root"))
     .render(
         <div >
         {/* <TailwindCSS/> */}
-        <UserForm/>
+        {/* <UserForm/> */}
         <HitungGajiForm/>
         </div>
     )
