@@ -11,4 +11,4 @@ createRoot(document.getElementById("root"))
         {/* <UserForm/> */}
         <HitungGajiForm/>
         </div>
-    )
+    );
