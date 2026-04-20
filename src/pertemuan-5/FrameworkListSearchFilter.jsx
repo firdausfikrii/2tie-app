@@ -76,9 +76,6 @@ export default function FrameworkListSearchFilter() {
                     ))}
                 </div>
             ))}
-            <ResponsiveText/>
-            <ResponsiveWidth/>
-            <ResponsiveLayout/>
         </div>
     )
 }
