@@ -1,8 +1,8 @@
 export default function ResponsiveDesign() {
     return (
         <div>
-            <ResponsiveText/>
-            <ResponsiveWidth/>
+            {/* <ResponsiveText/> */}
+            {/* <ResponsiveWidth/> */}
             <ResponsiveLayout/>
         </div>
     )
