@@ -15,19 +15,31 @@
     src: url("/fonts/Poppins-ExtraBold.ttf");
 }
 
-@theme{
-    --font-barlow : "Barlow", sans-serif;
-    --font-poppins : "Poppins", sans-serif;
-    --font-poppins-extrabold : "Poppins-Extrabold", sans-serif;
+@font-face {
+    font-family: "Playfair";
+    src: url("/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Playfair-Italic";
+    src: url("/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+
+@theme {
+    --font-barlow: "Barlow", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-poppins-extrabold: "Poppins-Extrabold", sans-serif;
+    --font-playfair: "Playfair", serif;
+    --font-playfair-italic: "Playfair-Italic", serif;
 
     --color-latar: #f3f4f6;
-    --color-teks: #374151; 
+    --color-teks: #374151;
     --color-teks-samping: #6b7280;
-    --color-garis: #e5e7eb; 
-    --color-hijau: #00B074; 
-    --color-merah: #ef4444; 
+    --color-garis: #e5e7eb;
+    --color-hijau: #00B074;
+    --color-merah: #ef4444;
     --color-biru: #3b82f6;
-    --color-kuning: #f59e0b; 
+    --color-kuning: #f59e0b;
 }
 
 body {
