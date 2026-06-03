@@ -34,11 +34,11 @@ export default function Header() {
                 {/* Profile Section */}
                 <div id="profile-container" className="flex items-center space-x-4 border-l pl-4 border-gray-300">
                     <span id="profile-text">
-                        Hello, <b>Fikri Muhaffizh</b>
+                        Hello, <b>Pido</b>
                     </span>
                     <img
                         id="profile-avatar"
-                        src="https://avatar.iran.liara.run/public/28"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVsoMwKKspteXFxRWUbSLbm4qa9IpKPTMpJg&s"
                         className="w-10 h-10 rounded-full"
                     />
                 </div>
