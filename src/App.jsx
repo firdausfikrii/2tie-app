@@ -4,6 +4,7 @@ const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
+const Notes = React.lazy(() => import("./pages/Notes"));
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
 import Products from "./pages/Products";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} /> 
+          <Route path="/notes" element={<Notes />}/>
         </Route>
 
         <Route element={<AuthLayout />}>

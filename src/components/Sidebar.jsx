@@ -1,4 +1,5 @@
-import { MdFastfood } from "react-icons/md"; 
+import { GrNotes } from "react-icons/gr";
+import { MdFastfood } from "react-icons/md";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -61,12 +62,17 @@ export default function Sidebar() {
               Products
             </NavLink>
           </li>
+          <li>
+            <NavLink id="menu-5" to="/notes" className={menuClass}>
+              <GrNotes className="mr-4 text-xl" />
+              Notes
+            </NavLink>
+          </li>
         </ul>
       </div>
 
       {/* Footer */}
       <div id="sidebar-footer" className="mt-auto">
-        
         <span id="footer-brand" className="font-bold text-gray-400">
           Sedap Restaurant Admin Dashboard
         </span>
